@@ -1,4 +1,4 @@
-var SoundOn = true;
+var SoundOn = false;    //打ち上げ音声切り替え.
 
 function windowResized() {
     resizeCanvas(document.documentElement.clientWidth, document.documentElement.clientHeight);
