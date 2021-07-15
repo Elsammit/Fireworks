@@ -5,8 +5,6 @@
   let fireworks = [];
   let star = [];
 
-
-
 class FireWork {
     // 初期設定
     constructor(x, y, vx, vy, gv, sound) {
@@ -198,3 +196,17 @@ class FireWork {
     }
 }
 
+var count = 0;
+var flg = false;
+(function($){
+    $(document).ready(function(){
+      var slides = $(".slideshow > li");
+      
+      function toggle_slide(){
+        count = (count + 1) % 5;
+        slides.removeClass("current").eq(count).addClass("current");
+        flg = false;
+      }
+      setInterval(toggle_slide, 5000);
+    });  
+})(jQuery);

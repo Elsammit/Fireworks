@@ -1,4 +1,4 @@
-var SoundOn = true;
+var SoundOn = false;
 
 function windowResized() {
     resizeCanvas(document.documentElement.clientWidth, document.documentElement.clientHeight);
